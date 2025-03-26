@@ -2,14 +2,14 @@ import { setDetailImgList, setImgList, setProduct, setProductList, setSize } fro
 import { axiosGet, axiosPost } from "./api";
 
 export const getProductList = () => async (dispatch) => {
-    const url = 'http://13.125.219.73:9000/product/all';
+    const url = 'http://54.180.106.193:9000/product/all';
 
     const result = await axiosGet({ url })
     dispatch(setProductList({ result }));
 }
 
 export const getProduct = (pid) => async (dispatch) => {
-    const url = "http://13.125.219.73:9000/product/detail";
+    const url = "http://54.180.106.193:9000/product/detail";
     const data = { "pid": pid };
 
     const result = await axiosPost({ url,data })
