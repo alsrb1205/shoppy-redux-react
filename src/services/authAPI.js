@@ -3,7 +3,7 @@ import { axiosPost } from "./api.js";
 
 
 export const getLogin = (formData) => async (dispatch) => {
-    const url = 'http://54.180.106.193:9000/member/login';
+    const url = 'http://13.125.219.73:9000/member/login';
     const data = formData;
 
     const loginResult = await axiosPost({ url, data });

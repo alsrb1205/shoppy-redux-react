@@ -11,7 +11,7 @@ export default function ImageUpload({getFileName}) {
         formData.append("oldFile", oldFile);  //이전 파일 a.png
 
         axios
-            .post('http://54.180.106.193:9000/uploads', formData , {
+            .post('http://13.125.219.73:9000/uploads', formData , {
                 headers : { "Content-Type": "multipart/form-data" },  
             })
             .then(res => {
